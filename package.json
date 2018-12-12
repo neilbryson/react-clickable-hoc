@@ -1,0 +1,51 @@
+{
+  "name": "react-clickable-hoc",
+  "version": "1.0.0",
+  "description": "Executes onClick to keyboard actions for improved accessibility of your React components",
+  "main": "index.js",
+  "author": "Neil Bryson Cargamento <neilbryson@live.com>",
+  "keywords": [
+    "react",
+    "hoc",
+    "higher order component",
+    "clickable",
+    "accessibility"
+  ],
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.7.1",
+    "jest": "^23.6.0",
+    "jest-enzyme": "^7.0.1",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "regenerator-runtime": "^0.13.1"
+  },
+  "peerDependencies": {
+    "react": ">=16.0.0",
+    "react-dom": ">=16.0.0"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/neilbryson/react-clickable-hoc",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/neilbryson/react-clickable-hoc.git"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!<rootDir>/node_modules/"
+    ],
+    "coverageReporters": [
+      "text",
+      "text-summary"
+    ],
+    "setupTestFrameworkScriptFile": "<rootDir>/src/config/testSetup.js"
+  },
+  "scripts": {
+    "test": "jest --watch --verbose=false",
+    "test:once": "jest"
+  }
+}
