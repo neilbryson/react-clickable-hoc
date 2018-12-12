@@ -1,7 +1,7 @@
-import React, { PureComponent } from 'react';
+const React = require('react');
 
 const clickable = Component =>
-  class WrappedComponent extends PureComponent {
+  class WrappedComponent extends React.PureComponent {
     constructor(props) {
       super(props);
 
@@ -26,8 +26,12 @@ const clickable = Component =>
     render() {
       const { onClick, onKeyDown, ...other } = this.props;
 
-      return <Component onClick={this.onClick} onKeyDown={this.onKeyDown} {...other} />;
+      return React.createElement(
+        Component,
+        { onClick: this.onClick, onKeyDown: this.onKeyDown, ...other },
+        null
+      )
     }
   };
 
-export default clickable;
+module.exports = clickable;
