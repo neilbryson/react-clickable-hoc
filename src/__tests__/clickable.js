@@ -31,11 +31,11 @@ describe('Clickable higher-order component', () => {
 
     it('should call the onClick prop once when Enter or space is pressed', () => {
       expect(onClick).not.toHaveBeenCalled();
-      wrapper.simulate('keydown', { key: ' ' });
+      wrapper.simulate('keydown', { key: ' ', preventDefault: () => {} });
       expect(onClick).toHaveBeenCalledTimes(1);
       onClick.mockClear();
       expect(onClick).not.toHaveBeenCalled();
-      wrapper.simulate('keydown', { key: 'Enter' });
+      wrapper.simulate('keydown', { key: 'Enter', preventDefault: () => {} });
       expect(onClick).toHaveBeenCalledTimes(1);
     });
   });
