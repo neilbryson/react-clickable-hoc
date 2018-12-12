@@ -24,8 +24,10 @@
     "regenerator-runtime": "^0.13.1"
   },
   "peerDependencies": {
+    "babel-core": "^6.26.3 || ^7.0.0-bridge-0",
     "react": ">=16.0.0",
-    "react-dom": ">=16.0.0"
+    "react-dom": ">=16.0.0",
+    "regenerator-runtime": "^0.13.1"
   },
   "license": "MIT",
   "homepage": "https://github.com/neilbryson/react-clickable-hoc",
