@@ -1,6 +1,6 @@
 {
   "name": "react-clickable-hoc",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Executes onClick to keyboard actions for improved accessibility of your React components",
   "main": "index.js",
   "author": "Neil Bryson Cargamento <neilbryson@live.com>",
