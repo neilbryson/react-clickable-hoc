@@ -1,4 +1,4 @@
-const React = require('react');
+import React from 'react';
 
 const clickable = Component =>
   class WrappedComponent extends React.PureComponent {
@@ -27,12 +27,8 @@ const clickable = Component =>
     render() {
       const { onClick, onKeyDown, ...other } = this.props;
 
-      return React.createElement(
-        Component,
-        { onClick: this.onClick, onKeyDown: this.onKeyDown, ...other },
-        null
-      )
+      return <Component onClick={this.onClick} onKeyDown={this.onKeyDown} {...other} />;
     }
   };
 
-module.exports = clickable;
+export default clickable;
