@@ -1,3 +1,3 @@
-const clickable = require('./src/clickable');
+const clickable = require('./dist/clickable');
 
 module.exports = clickable;
