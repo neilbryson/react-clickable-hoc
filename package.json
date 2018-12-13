@@ -13,15 +13,19 @@
   ],
   "devDependencies": {
     "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.4",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.7.1",
     "jest": "^23.6.0",
     "jest-enzyme": "^7.0.1",
+    "path": "^0.12.7",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "regenerator-runtime": "^0.13.1"
+    "regenerator-runtime": "^0.13.1",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2"
   },
   "peerDependencies": {
     "babel-core": "^6.26.3 || ^7.0.0-bridge-0",
@@ -47,6 +51,7 @@
     "setupTestFrameworkScriptFile": "<rootDir>/src/config/testSetup.js"
   },
   "scripts": {
+    "build": "webpack",
     "test": "jest --watch --verbose=false",
     "test:once": "jest"
   }
